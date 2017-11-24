@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  div.container
+    div.columns
+      div.column.col-10.col-mx-auto
+        table.table.table-striped
+          thead
+            tr 
+              th Amount
+              th Date
+              th Contract Number
+              th Vendor Name
+              th Voucher Number
+              th Dpt Name
+          tbody
+            each payement, i in payements
+              tr
+                td= payement.amount
+                td= payement.check_date
+                td= payement.contract_number
+                td= payement.vendor_name
+                td= payement.voucher_number
+                td= payement.department_name

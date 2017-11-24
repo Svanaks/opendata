@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title Open Data Mongo
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    script(src='https://d3js.org/d3.v4.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js')
+    link(rel='stylesheet' href='/css/spectre.min.css')
+    link(rel='stylesheet' href='/css/style.css')
+  body
+    header.navbar
+      section.navbar-section
+        h2.responsive-title(style="margin:auto") Datago 
+          small data from Chicago !
+      |   
+      section.navbar-center
+        a(href="/")
+          img(src="/img/chicagologo.png" alt="Logo" width="125px")
+      |   
+      section.navbar-section
+    block content
+    block scripts
+    
+    
+        

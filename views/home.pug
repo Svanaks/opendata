@@ -1,0 +1,58 @@
+extends layout
+
+block content
+  .card
+    .card-header
+      .card-title.h5 Update data set
+      |       
+      .card-subtitle.text-gray Api
+    |     
+    .card-body
+      | Fetch data from Chicago city api and stores them in MongoDb - All vendor payments made by the City of Chicago from 1996 to present. Payments from 1996 through 2002 have been rolled-up and appear as "2002." Total payment information is summarized for each vendor and contract number for data older than two years. These data are extracted from the City’s Vendor, Contract, and Payment Search.
+    |     
+    .card-footer
+      a.btn.btn-primary(href="/api/getDataFromApi") Update
+  .card  
+    .card-header
+      .card-title.h5 Payements
+      |       
+      .card-subtitle.text-gray Data
+    |     
+    .card-body
+      | Consult datas from our database. Check all payements from Chicago city
+    |     
+    .card-footer
+      a.btn.btn-primary(href="/api/payements") See Payements
+  .card   
+    .card-header
+      .card-title.h5 Search Specific Data
+      |       
+      .card-subtitle.text-gray Data
+    |     
+    .card-body
+      | You can filter our data by year, vendor name, amount...Find what you need ! 
+    |     
+    .card-footer
+      .form-group
+        label.form-label(for='filter') Filter
+        |         
+        input#filter.form-input(type='text', placeholder='Enter your search')
+      a.btn.btn-primary#searchButton Search
+  .card  
+    .card-header
+      .card-title.h5 Charts
+      |       
+      .card-subtitle.text-gray Visualization
+    |     
+    .card-body
+      | Data presentend as charts
+    |     
+    .card-footer
+      a.btn.btn-primary(href="/api/payements/chart") See Payements
+  script.
+    let button = document.getElementById("searchButton");
+    button.onclick = function () {
+      let text = document.getElementById("filter").value;
+      let textParsed = text.replace(/\//g, "%2F");
+      window.open("http://localhost:3000/api/payements/"+textParsed);
+    }

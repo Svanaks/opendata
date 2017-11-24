@@ -1,0 +1,21 @@
+@media screen and (max-width: 1024px)
+{
+  .responsive-title{
+    display: none;
+  }
+}
+
+#myChart{
+    max-height: 100vh;
+    max-width: 80vw;
+    margin: auto;
+}
+
+.chart div {
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}

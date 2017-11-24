@@ -1,0 +1,19 @@
+{
+  "name": "mongohearthstone",
+  "version": "1.0.0",
+  "description": "fetch data from api and store in mongodb",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "author": "william bloch",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^2.7.1",
+    "express": "^4.16.2",
+    "mongodb": "^2.2.33",
+    "pug": "^2.0.0-rc.4",
+    "request": "^2.83.0",
+    "spectre.css": "^0.4.6"
+  }
+}
