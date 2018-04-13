@@ -7,6 +7,13 @@ Fetch data from api, stores them in mongodb, make some requests and charts with 
 * Templating: PUG
 * Other: ChartJs
 
+Presentation
+--------------------
+
+The application looks like this: 
+
+<img src="public/img/datago1.PNG" width="400"><img src="public/img/datago2.PNG" width="400">
+<img src="public/img/datago3.PNG" width="400">
 
 Installation
 --------------------
